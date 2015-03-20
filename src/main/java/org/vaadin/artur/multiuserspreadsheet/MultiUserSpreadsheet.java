@@ -80,7 +80,7 @@ public class MultiUserSpreadsheet extends UI {
 					Cell cell = spreadsheet.getCell(cellRef);
 					if (cell == null) {
 						// Cell does not exist and this event should not arrive
-						return;
+						continue;
 					}
 					Object value = getCellValue(cell);
 					int cellType = cell.getCellType();
